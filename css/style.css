@@ -122,11 +122,13 @@ a .fa {
 
 .row {
   margin: auto;
+  padding-top: 20px;
   max-width: 1280px!important;
 }
 
 .paragraph p {
   text-align: justify;
+  padding: 10px;
 }
 
 .process {
@@ -315,16 +317,46 @@ a .fa {
 }
 
 .news a section {
-  background: #f0f0f0;
   height: 450px;
   padding: 80px 60px 0px;
   color: #686f71;
   transition: all 0.2s ease-in-out;
 }
 
+.news a section .icon {
+    height: 225px;
+    width: 225px;
+    line-height: 225px;
+    max-width: 100%;
+    background: #e9e9e9;
+    border-radius: 50%;
+    -o-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -webkit-border-radius: 50%;
+    display: block;
+    color: #fff;
+    font-size: 55px;
+    text-align: center;
+    vertical-align: middle;
+    position: relative;
+    margin: 0 auto 50px;
+}
+
+.news a section .icon i {
+  color: #3499c4;
+  font-size: 75px;
+  line-height: inherit;
+}
+
+
 .news a:hover section {
-  background: #33ace0;
+  background: #3499c4;
   color: #fff!important;
+  transition: all 0.2s ease-in-out;
+}
+
+.news a:hover section .icon {
+  background: #fff;
   transition: all 0.2s ease-in-out;
 }
 
@@ -345,6 +377,7 @@ a .fa {
 
 .news a section h3 {
   font-weight: 400!important;
+  text-align: center;
   color: #686f71;
 }
 
@@ -352,6 +385,7 @@ a .fa {
   color: #cbcbcb!important;
   margin: 20px 0px;
 }
+
 
 .headline {
   font-size: 2em!important;
@@ -454,26 +488,38 @@ a .fa {
   width: 100%;
   height: 300px;
   background: #edc2af;
-  background-image: url('../img/bg3.jpg');
+  background-image: url('../img/lake.jpg');
   background-size: cover;
   background-repeat: no-repeat;
   background-position: bottom;
-  padding: 80px 0;
 }
 
 .banner h2 {
   color: #fff!important;
-  padding-bottom: 20px!important;
+  text-shadow: #000 0px 0px 1px;
+  -webkit-font-smoothing: antialiased;
+  padding-bottom: 5px!important;
+  padding-top: 190px;
 }
 
+
 .banner h3 {
-    font-size: 1.3em!important;
+    font-size: 1.1em!important;
   color: #fff!important;
+  text-shadow: #000 0px 0px 1px;
+  -webkit-font-smoothing: antialiased;
 }
 
 .banner h2 span {
   font-weight: 200;
   font-style: italic;
+}
+
+.banner .logo {
+  margin-left: 40px;
+  margin-top: 175px;
+  padding-right: 20px;
+  float:left;
 }
 
 .header {
@@ -589,12 +635,12 @@ a .fa {
 }
 
 .menu .navigation {
-  width: 80%;
+  width: 85%;
   float: left;
 }
 
 .menu .lng {
-  width: 20%;
+  width: 15%;
   float: right;
   padding: 25px;
   color: #A0A0A0;
@@ -653,7 +699,7 @@ a .fa {
 
 .tabs-content>.content {
   padding: 0px!important;
-  padding-top: 80px!important;
+  padding-top: 20px!important;
 }
 
 .tabs .tab-title>a {
@@ -1101,6 +1147,8 @@ input:focus, input[type=text]:focus,input[type=email]:focus,input[type=location]
   .banner h3 {
     font-size: 1em!important;
   }
+
+
 
 }
 
