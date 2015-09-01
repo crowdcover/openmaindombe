@@ -107,9 +107,11 @@ http://circlesphere.co
             </div>
             <div class="content active" id="home">
               <div class="banner">
+                <div class="row">
                   <img src="img/logo.png" class="logo" width=100 height=100/>
                   <h2> Open Mai Ndombe</h2>
                   <h3>An open platform to increase transparency in the Mai Ndombe region.</h3>
+                </div>
               </div>
               <div class="row">
 
@@ -121,7 +123,7 @@ http://circlesphere.co
               </div>
               <div class="row news">
                 <div class="large-4 columns">
-                  <a href="#exploremaps">
+                  <a href="#fndtn-exploremaps">
                     <section>
                       <h3>Map</h3>
                       <div class="icon">
@@ -131,7 +133,7 @@ http://circlesphere.co
                   </a>
                 </div>
                 <div class="large-4 columns">
-                  <a href="#stories">
+                  <a href="#fndtn-stories">
                     <section>
                       <h3>Stories</h3>
                       <div class="icon">
@@ -141,7 +143,7 @@ http://circlesphere.co
                   </a>
                 </div>
                 <div class="large-4 columns">
-                  <a href="#resources">
+                  <a href="#fndtn-resources">
                     <section>
                       <h3>Resources</h3>
                       <div class="icon">
@@ -208,7 +210,12 @@ http://circlesphere.co
   <script src="js/modernizr.js"></script>
   <script src="js/foundation.min.js"></script>
    <script>
-      $(document).foundation();
+   $(document).foundation({
+     tab: {
+         deep_linking:true,
+         scroll_to_content: false
+     }
+    });
     </script>
   </body>
 </html>
